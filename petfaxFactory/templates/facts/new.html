@@ -18,12 +18,12 @@
         them! We may use them in the future.
       </div>
       <div class="facts-container">
-        <form>
+        <form action="/submit-fact" method="POST">
           <label for="submitter"><h2>Name</h2></label>
-          <input name="submitter" type="text" />
+          <input id="submitter" name="submitter" type="text" required />
           <br />
           <label for="fact"><h2>Fact</h2></label>
-          <textarea name="fact"></textarea>
+          <textarea id="fact" name="fact" required></textarea>
           <br />
           <input type="submit" value="Submit the Fact" />
         </form>
